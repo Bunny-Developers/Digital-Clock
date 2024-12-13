@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+      Running Time || Bunny Developers 
+    </title>
+</head>
+<body>
+  <style>
+  body {
+            font-family: Arial, sans-serif;
+            background: conic-gradient(#F2BAE8, #0C7883);
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            justify-content: center; /* Center :the .show-date div horizontally */
+            align-items: center; /* Center the .show-date div vertically */
+        }
+       
+.show-date {
+            display: flex;
+            flex-direction: row; /* Align items vertically */
+            align-items: center; /* Center items horizontally */
+            background: radial-gradient(circle, #F2BAE8, #0C7883);
+            border-radius: 50%; /* Circular border */
+            padding: 20px;
+            width: 300px; /* Adjust width for circular effect */
+            height: 300px; /* Adjust height for circular effect */
+            justify-content: center; /* Center items vertically */
+        }
+    .
+  .date, .clock, .stop-watch {
+            width: 33%; /* Full width for each item */
+            text-align: center; /* Center text */
+            margin-bottom: 10px; /* Space between items */
+        }
+
+ .date {
+    color: yellow;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+ .clock {
+   padding: 10px;
+   background: mediumpurple;
+   border-radius: 10px; /* Rounded corners */
+        }
+
+ .stop-watch {
+   padding: 20px;
+   width: 90px;
+   height: 90px;
+   background: gold;
+   border-radius: 50%; /* Rounded corners */
+        }
+            
+ .purple {
+   color: #6a0dad; /* Purple color for title */
+   font-weight: bold; /* Bold text */
+        }
+
+
+#time {
+display: block; /* Block display for time */
+}
+
+#reset {
+cursor: pointer;
+background: orangered;
+border-radius: 5px;
+color: #6a0dad; /* Purple color for reset link */
+}
+    
+    .date {
+   /*   padding: 10px;
+      margin-left: 0;
+      width: 25%;
+      height: 100%;
+      display: inline-flex;
+      background: violet;
+    }
+    .clock {
+      padding: 10px;
+      width: 25%;
+      display: inline-flex;
+      background: mediumpurple;
+    }
+    .stop-watch {
+      flex-direction: column;
+      padding: 10px;
+      margin-right: 0;
+      width: 25%;
+      display: inline-flex;
+      background: gold;
+      align-items: center;
+    }
+    .stop-watch .purple {
+      display:block;
+      background: transparent;
+    }
+    #time {
+      display: inline-flex;
+      background: transparent;
+    }
+    #reset {
+      display: inline-flex;
+      background: transparent;
+    }
+    */
+  </style>
+<div class="show-date">
+    <div id="date" class="date">2024-12-11</div>
+    <div id="clock" class="clock">00:00:00</div>
+    <div class="stop-watch">
+        
+          <p class="purple">STOP WATCH</p>
+        
+        <div class="time"id="time">Time: 00:00:00
+        </div>
+        <div>
+          <p>
+            <span id="reset" style="cursor: pointer; color: #6a0dad;">Reset Time</span>
+          </p>
+        </div>
+    </div>
+</div>
+   <script src="main.js"></script>
+</body>
+</html>
+
+
+
